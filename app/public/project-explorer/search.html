@@ -15,10 +15,15 @@
       max-width: 1440px;
     }
 
-    .main-container{
+    main{
       width: 84%;
-      margin: 3rem 0 6rem;
+      margin: 3rem 3rem 0 3rem;
     }
+
+    footer{
+      padding: 2rem 9rem 4rem;
+    }
+
 
   </style>
 </head>
@@ -43,86 +48,84 @@
       </nav>
     </header>
    
-  
-    <div class="mx-auto main-container">
-      <main>
-        <section>
-          <h4>Project Gallery</h4>
+    <main class="mx-auto">
+      <section>
+        <h4>Project Gallery</h4>
+        
+        <form action="" name="searchTerm" class="form-row">
+          <input type="text" name="searchTerm" class="form-control form-control-lg w-50" placeholder="Search project name, authors, abstract, tags">
           
-          <form action="" name="searchTerm" class="form-row">
-            <input type="text" name="searchTerm" class="form-control form-control-lg w-50" placeholder="Search project name, authors, abstract, tags">
+          
+          <div class="form-group form-row mx-2">
+            <label for="searchBy" class="form-label bg-light p-3">Search By:</label>
+            <div>
+              <select name="searchType" id="searchBy" class="form-control form-control-lg">
+                <option value="Name">Name</option>
+                <option value="Abstract">Abstract</option>
+                <option value="Authors">Authors</option>
+                <option value="Tags">Tags</option>
+              </select>  
+            </div>
             
-           
-            <div class="form-group form-row mx-2">
-              <label for="searchBy" class="form-label bg-light p-3">Search By:</label>
-              <div>
-                <select name="searchType" id="searchBy" class="form-control form-control-lg">
-                  <option value="Name">Name</option>
-                  <option value="Abstract">Abstract</option>
-                  <option value="Authors">Authors</option>
-                  <option value="Tags">Tags</option>
-                </select>  
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+          </div>
+          
+        </form>
+
+      </section>
+
+      
+      <section>
+        <h5 class="mt-4 mb-3">All Projects <small class="text-muted">(0 results)</small></h5>
+
+        <div class="row mx-0">
+          <div class="col-md-3 px-0 mr-md-2 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Project title</h5>
+                <h6 class="card-subtitle text-muted mb-2">Author 1, Author 2</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <div class="row mx-0 text-primary">
+                  <p class="mr-3">#html</p>
+                  <p class="mr-3">#css</p>
+                  <p class="">#javascript</p>
+                </div>
               </div>
               
             </div>
-
-            <div>
-              <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-            </div>
-            
-          </form>
-
-        </section>
-
-        
-        <section>
-          <h5 class="mt-4 mb-3">All Projects <small class="text-muted">(0 results)</small></h5>
-
-          <div class="row mx-0">
-            <div class="col-md-3 px-0 mr-md-2 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Project title</h5>
-                  <h6 class="card-subtitle text-muted mb-2">Author 1, Author 2</h6>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                  <div class="row mx-0 text-primary">
-                    <p class="mr-3">#html</p>
-                    <p class="mr-3">#css</p>
-                    <p class="">#javascript</p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-
-            <div class="col-md-3 px-0 mt-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Project title</h5>
-                  <h6 class="card-subtitle text-muted mb-2">Author 1, Author 2</h6>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                  <div class="row mx-0 text-primary">
-                    <p class="mr-3">#html</p>
-                    <p class="mr-3">#css</p>
-                    <p class="">#javascript</p>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          
           </div>
-          
-          
-          
-        </section>
-      
-      </main>
+
+          <div class="col-md-3 px-0 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Project title</h5>
+                <h6 class="card-subtitle text-muted mb-2">Author 1, Author 2</h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <div class="row mx-0 text-primary">
+                  <p class="mr-3">#html</p>
+                  <p class="mr-3">#css</p>
+                  <p class="">#javascript</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        
+        </div>
+        
+        
+        
+      </section>
     
-      <footer class="row justify-content-end mx-0 pt-3">
-        <p>Project Explorer &copy 2020 - <strong>Edconnect</strong></p>
-      </footer>
-    </div>
+    </main>
+
+    <footer class="row justify-content-end mx-0">
+      <p>Project Explorer &copy 2020 - <strong>Edconnect</strong></p>
+    </footer>
+  
   
   </div>
 
