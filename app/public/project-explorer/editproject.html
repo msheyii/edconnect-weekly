@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Explorer</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    a{
+      color: white;
+    }
+
+    p{
+      margin:0;
+    }
+
+    main{
+      margin: 0 3rem;
+    }
+
+    footer{
+      padding: 3rem 3rem 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="px-3 mx-auto" style="max-width: 1440px;">
+    <header>
+      <nav class="navbar bg-primary">
+        <div class="navbar-nav flex-row align-items-baseline">
+          <a href="index.html" class="mr-3">Project Explorer</a>
+          <form class="form-inline" name="searchForm">
+          <input type="text" class="form-control mr-2" placeholder="Search Projects">
+          <button type="submit" class="btn btn-outline-light mr-2">Search</button>
+          </form>
+          <a href="createproject.html">Submit</a>  
+        </div>
+        
+        <div>
+          <a href="register.html" class="mr-3">Sign up</a>
+          <a href="login.html">Login</a>
+        </div>
+    
+      </nav>
+    </header>
+  
+
+    <main>
+      <section class="container my-5">
+        <h4>Project 1</h4>
+        <div class="row bg-light p-2 mt-3 ml-2">
+          <div class="col">
+            <p>Created By</p>
+            <p>James Wike</p>
+          </div>
+          <div class="col">
+            <p>Date Created</p>
+            <p>2020-08-30</p>
+          </div>
+          <div class="col">
+            <p>Last Updated</p>
+            <p>2020-08-30</p>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">View Project</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="mt-2">
+        <h5 class="mb-4">Edit Project</h5>
+        <form action="" name="editProject"> 
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="projectName" class="form-label">Project name</label> 
+                <input type="text" name="name" class="form-control" id="projectName" placeholder="Project 1"> 
+              </div>
+              <div class="form-group">
+                <label for="projectAbstract" class="form-label">Project abstract</label> 
+                <textarea name="abstract" class="form-control" id="projectAbstract" cols="30" rows="10" placeholder="Project 1 is a very interesting project"></textarea> 
+              </div>
+              <div class="form-group">
+                <label for="authors" class="form-label">Author(s)</label> 
+                <input type="text" name="authors" class="form-control" id="authors" placeholder="James Wike"> 
+              </div>
+              <div class="form-group">
+                <label for="tags" class="form-label">Tag(s)</label> 
+                <input type="text" name="tags" class="form-control" id="tags" placeholder="#web"> 
+              </div>    
+            </div>   
+          
+            <div class="col mt-n5">
+              <h5>Manage Project Files</h5>
+              <div class="form-group mt-4">
+                <input type="file" name="projectFile" class="form-control" id="projectFile">
+              </div>
+            
+              <div class="card">
+                <div class="card-header">
+                  <h6>Project Files</h6>
+                </div>
+                <div class="card-body text-center">
+                  <p class="card-text">No file uploaded yet</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form> 
+      </section>
+       
+    </main>
+
+    <footer class="row justify-content-end mx-0">
+      <p>Project Explorer &copy 2020 - <strong>Edconnect</strong></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Explorer</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    a{
+      color: white;
+    }
+
+    .container{
+      max-width: 1440px;
+    }
+
+    main, footer{
+      padding: 2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar bg-primary">
+        <div class="navbar-nav flex-row align-items-baseline">
+          <a href="index.html" class="mr-3">Project Explorer</a>
+          <form class="form-inline" name="searchForm">
+          <input type="text" class="form-control mr-2" placeholder="Search Projects">
+          <button type="submit" class="btn btn-outline-light mr-2">Search</button>
+          </form>
+          <a href="createproject.html">Submit</a>  
+        </div>
+        
+        <div>
+          <a href="register.html" class="mr-3">Sign up</a>
+          <a href="login.html">Login</a>
+        </div>
+    
+      </nav>
+    </header>
+   
+  
+    <main class="mx-auto w-75">
+      <h1 class="mb-2">Signup</h1>
+      <form action="">
+        <div class="form-row mx-0">
+          <div class="col px-0">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First name:</label>
+              <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address:</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email address">
+            </div>
+            <div class="form-group">
+              <label for="program" class="form-label">Program:</label>
+              <select name="program" class="form-control" id="program">
+                <option value="" disabled selected>Choose...</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="computer_information_systems">Computer Information Systems</option>
+                <option value="computer_technology">Computer Technology</option>
+              </select>
+            </div>
+        
+          </div>
+  
+          <div class="col">
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last name:</label>
+              <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name">
+            </div>
+            <div class="form-group">
+              <label for="password" class="form-label">Password:</label>
+              <input type="password" name="password" class="form-control" id="password" placeholder="Your Password">
+            </div>
+            <div class="form-row mx-0">
+              <div class="form-group col px-0">
+                <label for="matricNumber" class="form-label">Matriculation number:</label>
+                <input type="text" name="matricNumber" class="form-control" id="matricNumber" placeholder="e.g 19/2020">
+              </div>
+              <div class="form-group col pr-0">
+                <label for="graduationYear" class="form-label">Graduation year:</label>
+                <select name="graduationYear" class="form-control" id="graduationYear">
+                  <option value="" disabled selected>Choose...</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+       
+        
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+
+
+      </form>
+    </main>
+
+    <footer class="row justify-content-end mx-0">
+      <p>Project Explorer &copy 2020 - <strong>Edconnect</strong></p>
+    </footer>
+
+  </div>
+</body>
+</html>

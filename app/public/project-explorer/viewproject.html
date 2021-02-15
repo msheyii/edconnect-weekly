@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Explorer</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    a{
+      color: white;
+    }
+
+    p{
+      margin:0;
+    }
+
+    h5{
+      margin-bottom: 2rem;
+    }
+
+    main{
+      margin: 0 3rem;
+    }
+
+    .comment-fb{
+      border-top: .5px solid rgba(119, 119, 119, 0.212);
+    }
+
+    footer{
+      padding: 3rem 3rem 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="px-3 mx-auto" style="max-width: 1440px;">
+    <header>
+      <nav class="navbar bg-primary">
+        <div class="navbar-nav flex-row align-items-baseline">
+          <a href="index.html" class="mr-3">Project Explorer</a>
+          <form class="form-inline" name="searchForm">
+          <input type="text" class="form-control mr-2" placeholder="Search Projects">
+          <button type="submit" class="btn btn-outline-light mr-2">Search</button>
+          </form>
+          <a href="createproject.html">Submit</a>  
+        </div>
+        
+        <div>
+          <a href="register.html" class="mr-3">Sign up</a>
+          <a href="login.html">Login</a>
+        </div>
+    
+      </nav>
+    </header>
+
+    <main>
+      <section class="container my-5">
+        <h4>Project 1</h4>
+        <div class="row bg-light p-2 mt-3 ml-2">
+          <div class="col">
+            <p>Created By</p>
+            <p>James Wike</p>
+          </div>
+          <div class="col">
+            <p>Date Created</p>
+            <p>2020-08-30</p>
+          </div>
+          <div class="col">
+            <p>Last Updated</p>
+            <p>2020-08-30</p>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Edit Project</button>
+          </div>
+          
+        </div>
+      </section>
+  
+      <section class="row">
+        <article class="col">
+          <h5>Project Abstract</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <form action="" name="comments">
+            <div class="form-group">
+              <label for="comments" class="form-label"></label>
+              <textarea name="comments" class="form-control" id="comments" cols="30" rows="10"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p class="text-center comment-fb mt-3">No comments added yet</p>
+          </form>
+         
+        </article>
+          
+        <article class="col">
+          <h5>Project Details</h5>
+          <div class="card">
+            <div class="card-header">
+              <h6>Author(s)</h6>
+            </div>
+            <div class="card-body">
+              <p class="card-text">James Wike</p>
+            </div>
+            <div class="card-footer">
+              <p>#web</p>
+            </div>
+            
+          </div>
+          <div class="card mt-3">
+            <div class="card-header">
+              <h6>Project Files</h6>
+            </div>
+            <div class="card-body text-center">
+              <p class="card-text">No file uploaded yet</p>
+            </div>
+            
+          </div>
+        </article>
+       
+
+      </section> 
+      
+    </main>
+
+    <footer class="row justify-content-end mx-0">
+      <p>Project Explorer &copy 2020 - <strong>Edconnect</strong></p>
+    </footer>
+
+  </div>
+</body>
+</html>
