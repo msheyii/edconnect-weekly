@@ -20,6 +20,14 @@
       margin: 3rem 3rem 0 3rem;
     }
 
+    .searchInput{
+      width: 60%;
+    }
+
+    .searchBy{
+      background-color: rgba(133, 133, 133, 0.103);
+    }
+
     footer{
       padding: 2rem 9rem 4rem;
     }
@@ -52,32 +60,31 @@
       <section>
         <h4>Project Gallery</h4>
         
-        <form name="searchForm" class="form-row">
-          <div class="w-50">
-            <input type="text" name="searchTerm" value="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
-          </div>
-          
-          <div class="form-group form-row mx-2">
-            <div class="bg-light p-3">
-              <label for="searchBy" class="form-label">Search By:</label>
+        <div class="bg-light p-3">
+          <form name="searchForm" class="form-row">
+            
+            <input type="text" name="searchTerm" class="form-control form-control-lg searchInput" placeholder="Search project name, authors, abstract, tags">
+            
+            <div class="form-group form-row">         
+                <label for="searchBy" class="form-label form-control-lg searchBy">Search By:</label>
+                <div>
+                  <select name="searchType" id="searchBy" class="form-control form-control-lg">
+                    <option value="Name">Name</option>
+                    <option value="Abstract">Abstract</option>
+                    <option value="Authors">Authors</option>
+                    <option value="Tags">Tags</option>
+                  </select>   
+                </div>
+                 
             </div>
+  
             <div>
-              <select name="searchType" id="searchBy" class="form-control form-control-lg">
-                <option value="Name">Name</option>
-                <option value="Abstract">Abstract</option>
-                <option value="Authors">Authors</option>
-                <option value="Tags">Tags</option>
-              </select>  
+              <button type="submit" class="btn btn-lg btn-primary">Submit</button>
             </div>
             
-          </div>
-
-          <div>
-            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
-          </div>
-          
-        </form>
-
+          </form>
+        </div>
+        
       </section>
 
       
